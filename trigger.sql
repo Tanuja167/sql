@@ -1,16 +1,12 @@
 use trigger1
 use employee
 
-create table EmployeeTrack
-(
-  id int primary key identity(1,1),
-  ddescription varchar(20),
-  )
+
 create table EmployeeTrack1
 (
   id int primary key identity(1,1),
   ddescription varchar(500),
-  )
+)
 
   alter table EmployeeTrack1 alter column ddescription varchar(max)
 
@@ -31,13 +27,25 @@ select *from employee1
 select *from EmployeeTrack1
 
 insert into employee1 values(106, 'tanuja', 'tanuja@gmail.com',30000)
-
-
-
-
-
-
-
-
-
 select *from employee1
+
+
+create table Main1
+(
+   id int,
+   sal int,
+)
+insert into Main1 values(1, 10000)
+insert into Main1 values(2, 20000)
+insert into Main1 values(3,30000)
+select *from Main1
+
+create table Backup11
+(
+id int,
+sal int,
+)
+
+
+
+
