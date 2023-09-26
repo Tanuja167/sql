@@ -11,7 +11,6 @@ else 'average'
 end as 'remark'
 from Product
 
-select *from employee1
 
 select empid, empname,
 case
@@ -20,3 +19,14 @@ when emp_sal >25000 and emp_sal <40000 then 'average salary'
 else 'low salary'
 end as 'remark'
 from employee1
+
+select *from employee1
+
+select empid, empname,
+case
+when empid > 103 then 'highest record'
+when empid < 103 then 'lowest record'
+else 'medium record'
+end as 'remark'
+from employee1
+
